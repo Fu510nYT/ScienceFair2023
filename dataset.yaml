@@ -1,0 +1,28 @@
+---
+type: intent
+name: find
+slots:
+  - name: item
+    entity: item
+utterances:
+  - can you help me find some [item](water)?
+  - find me some [item](water) please
+  - is there any [item](soda)?
+  - look for some [item](clothes) please
+  - go get my [item](phone) for me please
+---
+type: intent
+name: greetings
+utterances:
+  - hello
+  - hi
+  - greetings
+  - how are you doing?
+  - nice to meet you
+---
+type: entity
+name: item
+values:
+  - clothes
+  - [water, liquid, drinks, soda]
+  - [phone, iphone, device, tablet, computer]

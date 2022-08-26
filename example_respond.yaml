@@ -1,0 +1,27 @@
+# turnLightOn intent
+---
+type: intent
+name: find
+slots:
+  - name: item
+    missing_slot_respond:
+      - type: say
+        texts:
+          - Sorry I couldn't quite catch what you want me to look for
+respond:
+  - type: say
+    texts:
+      - Okay, I'll find you some [item].
+---
+type: intent
+name: greetings
+respond:
+  - type: say
+    texts:
+      - hello how may I help you?
+---
+type: cannot_understand
+respond:
+  - type: say
+    texts:
+      - Sorry, I cannot understand.

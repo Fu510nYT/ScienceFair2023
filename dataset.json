@@ -1,0 +1,151 @@
+{
+    "language": "en",
+    "intents": {
+        "find": {
+            "utterances": [
+                {
+                    "data": [
+                        {
+                            "text": "can you help me find some "
+                        },
+                        {
+                            "text": "water",
+                            "slot_name": "item",
+                            "entity": "item"
+                        }
+                    ]
+                },
+                {
+                    "data": [
+                        {
+                            "text": "find me some "
+                        },
+                        {
+                            "text": "water",
+                            "slot_name": "item",
+                            "entity": "item"
+                        },
+                        {
+                            "text": " please"
+                        }
+                    ]
+                },
+                {
+                    "data": [
+                        {
+                            "text": "is there any "
+                        },
+                        {
+                            "text": "water",
+                            "slot_name": "item",
+                            "entity": "item"
+                        },
+                        {
+                            "text": "?"
+                        }
+                    ]
+                },
+                {
+                    "data": [
+                        {
+                            "text": "look for some "
+                        },
+                        {
+                            "text": "clothes",
+                            "slot_name": "item",
+                            "entity": "item"
+                        },
+                        {
+                            "text": " please"
+                        }
+                    ]
+                },
+                {
+                    "data": [
+                        {
+                            "text": "go get my "
+                        },
+                        {
+                            "text": "phone",
+                            "slot_name": "item",
+                            "entity": "item"
+                        },
+                        {
+                            "text": " for me please"
+                        }
+                    ]
+                }
+            ]
+        },
+        "greetings": {
+            "utterances": [
+                {
+                    "data": [
+                        {
+                            "text": "hello"
+                        }
+                    ]
+                },
+                {
+                    "data": [
+                        {
+                            "text": "hi"
+                        }
+                    ]
+                },
+                {
+                    "data": [
+                        {
+                            "text": "greetings"
+                        }
+                    ]
+                },
+                {
+                    "data": [
+                        {
+                            "text": "how are you doing?"
+                        }
+                    ]
+                },
+                {
+                    "data": [
+                        {
+                            "text": "nice to meet you"
+                        }
+                    ]
+                }
+            ]
+        }
+    },
+    "entities": {
+        "item": {
+            "automatically_extensible": true,
+            "use_synonyms": true,
+            "data": [
+                {
+                    "value": "clothes",
+                    "synonyms": []
+                },
+                {
+                    "value": "water",
+                    "synonyms": [
+                        "liquid",
+                        "drinks",
+                        "soda"
+                    ]
+                },
+                {
+                    "value": "phone",
+                    "synonyms": [
+                        "iphone",
+                        "device",
+                        "tablet",
+                        "computer"
+                    ]
+                }
+            ],
+            "matching_strictness": 0.8
+        },
+        "snips/temperature": {}
+    }
+}
